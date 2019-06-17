@@ -79,47 +79,7 @@ public class amazonTest extends Base {
 		Assert.assertTrue("product not found in cart",cartobj.productCartTitle(1).getText().toLowerCase().contains(firstProductName));
 	}
 
-	@Test(dataProvider = "dataVal")
-	public void verifyCartTotalWithIncreaseCount(String product) {
-
-		log.info("navigated to home");
-		SearchPage home = new SearchPage(driver);
-		CartPage cartobj = new CartPage(driver);
-		home.sendSearch(product);
-		log.info("searched results shown");
-
-		String oldTab = driver.getWindowHandle();
-
-		home.firstProduct.click();
-
-		// get window handles
-		ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
-		newTab.remove(oldTab);
-
-		// change focus to new tab
-		driver.switchTo().window(newTab.get(0));
-
-		home.addToCart.click();
-
-		driver.close();
-
-		// change focus back to old tab
-		driver.switchTo().window(oldTab);
-
-		home.cart.click();
-
-		// NumberFormat formatter = NumberFormat.getCurrencyInstance();
-
-		// int expectedPrice =
-		// Integer.parseInt(formatter.format(cartobj.productPrice.getText().replaceAll("
-		// ", ""))) * 10 ;
-
-		cartobj.increaseQuantity("10");
-
-		// Assert.assertEquals(expectedPrice,
-		// Integer.parseInt(formatter.format(cartobj.totalPrice.getText().replaceAll("
-		// ", ""))));
-	}
+//	
 
 	@Test(dataProvider = "dataVal")
 	public void verifyAddingTwoProduct(String product) {

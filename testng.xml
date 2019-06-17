@@ -7,9 +7,6 @@
   <test name="Test">
     <classes>
       <class name="com.amazon.MyProject.amazonTest">
-      <methods>
-      <include name = 'verifyRemovingProduct'></include>
-      </methods>
       </class>
     </classes>
   </test> <!-- Test -->
