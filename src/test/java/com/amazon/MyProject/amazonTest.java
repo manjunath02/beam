@@ -36,7 +36,7 @@ public class amazonTest extends Base {
 	@Test(dataProvider = "dataVal")
 	public void verifySearchedProduct(String product) {
 
-		String productPresent = null;
+		String productPresent = "";
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
 		home.sendSearch(product);
@@ -84,7 +84,7 @@ public class amazonTest extends Base {
 	@Test(dataProvider = "dataVal")
 	public void verifyAddingTwoProduct(String product) {
 
-		int noOfProducts;
+		
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
 		CartPage cartobj = new CartPage(driver);
@@ -103,9 +103,7 @@ public class amazonTest extends Base {
 		log.info("added second product");
 		home.cart.click();
 
-		noOfProducts = cartobj.productsInCart().size();
-
-		Assert.assertEquals("added products not found in cart",noOfProducts + 1, cartobj.productsInCart().size());
+		Assert.assertEquals("added products not found in cart",2, cartobj.productsInCart().size());
 
 	}
 
@@ -147,7 +145,7 @@ public class amazonTest extends Base {
 	@DataProvider
 	public static Object[][] dataVal() {
 		Object[][] obj = new Object[1][1];
-		obj[0][0] = "earphone";
+		obj[0][0] = "car";
 		return obj;
 
 	}

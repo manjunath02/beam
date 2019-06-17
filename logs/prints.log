@@ -1,4 +1,7 @@
-21:04:20.865 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-21:04:24.294 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-21:06:47.999 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-21:06:51.799 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+00:54:22.996 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+00:54:25.189 [main] INFO  com.amazon.MyProject.amazonTest - added first product
+00:54:27.038 [main] INFO  com.amazon.MyProject.amazonTest - added second product
+00:54:31.102 [main] INFO  com.amazon.MyProject.amazonTest - deleted one product
+00:54:53.284 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+00:54:53.285 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+00:54:55.806 [main] INFO  com.amazon.MyProject.amazonTest - Search Results Displayed
