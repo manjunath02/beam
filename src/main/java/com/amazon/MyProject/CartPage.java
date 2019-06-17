@@ -20,13 +20,7 @@ public class CartPage {
 
 	@FindBy(xpath = "//span[@class='a-button-text a-declarative']")
 	public WebElement quantity;
-
-	@FindBy(id = "dropdown1_9")
-	public WebElement tenPlus;
-
-	@FindBy(xpath = "//input[@name='quantityBox']")
-	public WebElement quantityBox;
-
+	
 	@FindBy(xpath = "//span[@class='a-button a-button-primary a-button-small sc-update-link a-span8']")
 	public WebElement updateButton;
 
@@ -40,13 +34,6 @@ public class CartPage {
 
 	}
 
-	public void increaseQuantity(String quant) {
-		quantity.click();
-		tenPlus.click();
-		quantityBox.sendKeys(quant);
-		updateButton.click();
-
-	}
 
 	public List<WebElement> productsInCart() {
 		List<WebElement> productsCart = driver

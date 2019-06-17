@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-17T19:23:10Z" name="Suite" finished-at="2019-06-17T19:24:56Z" duration-ms="106699">
+  <suite started-at="2019-06-17T19:28:04Z" name="Suite" finished-at="2019-06-17T19:29:42Z" duration-ms="97697">
     <groups>
     </groups>
-    <test started-at="2019-06-17T19:23:10Z" name="Test" finished-at="2019-06-17T19:24:56Z" duration-ms="106699">
+    <test started-at="2019-06-17T19:28:04Z" name="Test" finished-at="2019-06-17T19:29:42Z" duration-ms="97697">
       <class name="com.amazon.MyProject.amazonTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:23:10Z" name="beforeTest" finished-at="2019-06-17T19:23:28Z" duration-ms="18114" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:05Z" name="beforeTest" finished-at="2019-06-17T19:28:22Z" duration-ms="17744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyAddedProductInCart(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:23:28Z" name="verifyAddedProductInCart" data-provider="dataVal" finished-at="2019-06-17T19:23:34Z" duration-ms="6512" status="PASS">
+        <test-method signature="verifyAddedProductInCart(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:22Z" name="verifyAddedProductInCart" data-provider="dataVal" finished-at="2019-06-17T19:28:28Z" duration-ms="5725" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedProductInCart -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:23:35Z" name="afterTest" finished-at="2019-06-17T19:23:35Z" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:29Z" name="afterTest" finished-at="2019-06-17T19:28:29Z" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:23:35Z" name="beforeTest" finished-at="2019-06-17T19:23:52Z" duration-ms="16412" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:29Z" name="beforeTest" finished-at="2019-06-17T19:28:45Z" duration-ms="15783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyAddingTwoProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:23:52Z" name="verifyAddingTwoProduct" data-provider="dataVal" finished-at="2019-06-17T19:24:02Z" duration-ms="10777" status="PASS">
+        <test-method signature="verifyAddingTwoProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:45Z" name="verifyAddingTwoProduct" data-provider="dataVal" finished-at="2019-06-17T19:28:52Z" duration-ms="7551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTwoProduct -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:03Z" name="afterTest" finished-at="2019-06-17T19:24:03Z" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:53Z" name="afterTest" finished-at="2019-06-17T19:28:53Z" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:03Z" name="beforeTest" finished-at="2019-06-17T19:24:20Z" duration-ms="16726" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:28:53Z" name="beforeTest" finished-at="2019-06-17T19:29:09Z" duration-ms="15799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyRemovingProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:20Z" name="verifyRemovingProduct" data-provider="dataVal" finished-at="2019-06-17T19:24:36Z" duration-ms="15654" status="PASS">
+        <test-method signature="verifyRemovingProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:29:09Z" name="verifyRemovingProduct" data-provider="dataVal" finished-at="2019-06-17T19:29:22Z" duration-ms="13682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemovingProduct -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:36Z" name="afterTest" finished-at="2019-06-17T19:24:36Z" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:29:23Z" name="afterTest" finished-at="2019-06-17T19:29:23Z" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:36Z" name="beforeTest" finished-at="2019-06-17T19:24:53Z" duration-ms="16631" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:29:23Z" name="beforeTest" finished-at="2019-06-17T19:29:39Z" duration-ms="15721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifySearchedProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:53Z" name="verifySearchedProduct" data-provider="dataVal" finished-at="2019-06-17T19:24:55Z" duration-ms="2694" status="PASS">
+        <test-method signature="verifySearchedProduct(java.lang.String)[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:29:39Z" name="verifySearchedProduct" data-provider="dataVal" finished-at="2019-06-17T19:29:41Z" duration-ms="2715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchedProduct -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:24:56Z" name="afterTest" finished-at="2019-06-17T19:24:56Z" duration-ms="142" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.amazon.MyProject.amazonTest@5e1fa5b1]" started-at="2019-06-17T19:29:42Z" name="afterTest" finished-at="2019-06-17T19:29:42Z" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
