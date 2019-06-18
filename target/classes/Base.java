@@ -24,15 +24,25 @@ public class Base {
 		prop.load(fis);
 
 		String browser = prop.getProperty("browser");
-
+		String OS = prop.getProperty("OS");
+	if(OS.equals("mac"))
+	{
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver");
 			driver = new ChromeDriver();
 
+		}}
+	else if (OS.equals("windows")) {
+		if (browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+			driver = new ChromeDriver();
+
 		}
+		
+	}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}	
+	}
 
 	public void getScreenshot(String screenshotname) throws IOException {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

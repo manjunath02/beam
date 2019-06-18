@@ -1,7 +1,0 @@
-00:58:49.303 [main] INFO  com.amazon.MyProject.amazonTest - added one product
-00:58:51.053 [main] INFO  com.amazon.MyProject.amazonTest - added second product
-00:59:09.201 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-00:59:09.202 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-00:59:11.595 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-00:59:14.100 [main] INFO  com.amazon.MyProject.amazonTest - added first product
-00:59:15.905 [main] INFO  com.amazon.MyProject.amazonTest - added second product

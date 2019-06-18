@@ -17,16 +17,10 @@ public class SearchPage {
 	public WebElement searchBar;
 
 	@FindBy(id = "add-to-cart-button")
-	public WebElement addToCart;
+	public WebElement addToCartButton;
 
 	@FindBy(xpath = "//div[@class='nav-search-submit nav-sprite']")
 	public WebElement submitButton;
-
-	@FindBy(xpath = "(//a[@class='a-link-normal a-text-normal'])[1]/span")
-	public WebElement firstProduct;
-
-	@FindBy(xpath = "(//a[@class='a-link-normal a-text-normal'])[2]/span")
-	public WebElement secondProduct;
 
 	@FindBy(xpath = "//a[@href='https://www.amazon.in/gp/cart/view.html?ref_=nav_cart']")
 	public WebElement cart;
@@ -62,7 +56,7 @@ public class SearchPage {
 		// change focus to new tab
 		driver.switchTo().window(newTab.get(0));
 
-		addToCart.click();
+		addToCartButton.click();
 
 		driver.close();
 

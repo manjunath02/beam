@@ -1,4 +1,27 @@
-00:59:17.852 [main] INFO  com.amazon.MyProject.amazonTest - deleted one product
-00:59:39.117 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-00:59:39.117 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-00:59:41.735 [main] INFO  com.amazon.MyProject.amazonTest - Search Results Displayed
+23:09:58.864 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+23:09:58.880 [main] INFO  com.amazon.MyProject.amazonTest - Running verify Added Product In Cart test
+23:09:58.881 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+23:10:01.130 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+23:10:02.939 [main] INFO  com.amazon.MyProject.amazonTest - product added to cart
+23:10:05.028 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
+23:10:21.318 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+23:10:21.319 [main] INFO  com.amazon.MyProject.amazonTest - Test verify Adding 2 Product In Cart
+23:10:21.320 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+23:10:23.725 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+23:10:25.361 [main] INFO  com.amazon.MyProject.amazonTest - added one product
+23:10:27.484 [main] INFO  com.amazon.MyProject.amazonTest - added second product
+23:10:28.878 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
+23:10:44.802 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+23:10:44.802 [main] INFO  com.amazon.MyProject.amazonTest - Verify Deleting Product Test
+23:10:44.803 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+23:10:47.169 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+23:10:48.824 [main] INFO  com.amazon.MyProject.amazonTest - added first product
+23:10:50.857 [main] INFO  com.amazon.MyProject.amazonTest - added second product
+23:10:52.339 [main] INFO  com.amazon.MyProject.amazonTest - deleted one product
+23:10:57.366 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
+23:11:12.985 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+23:11:12.986 [main] INFO  com.amazon.MyProject.amazonTest - Running verify Searched Product in list test
+23:11:12.986 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+23:11:15.340 [main] INFO  com.amazon.MyProject.amazonTest - Search Results Displayed
+23:11:15.445 [main] INFO  com.amazon.MyProject.amazonTest - Searching product in list
+23:11:15.445 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed

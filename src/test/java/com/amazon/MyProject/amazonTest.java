@@ -33,7 +33,8 @@ public class amazonTest extends Base {
 
 	@Test(dataProvider = "dataVal")
 	public void verifySearchedProduct(String product) {
-
+		
+		log.info("Running verify Searched Product in list test");
 		String productPresent = "";
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
@@ -47,15 +48,18 @@ public class amazonTest extends Base {
 			}
 
 		}
-
+		log.info("Searching product in list");
+		
 		// Assuming task is to verify searched product is shown in list
 		Assert.assertTrue("searched product not found in list",productPresent.contains(product));
-		
+		log.info("Test Passed");
 	}
 
 	@Test(dataProvider = "dataVal")
 	public void verifyAddedProductInCart(String product) {
 
+		log.info("Running verify Added Product In Cart test");
+		
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
 		home.sendSearch(product);
@@ -74,15 +78,17 @@ public class amazonTest extends Base {
 
 		CartPage cartobj = new CartPage(driver);
 
-		Assert.assertTrue("product not found in cart",cartobj.productCartTitle(1).getText().toLowerCase().contains(firstProductName));
+		
+		Assert.assertTrue("product not found in cart",cartobj.cartProductTitle(1).getText().toLowerCase().contains(firstProductName));
+		log.info("Test Passed");
 	}
 
-//	
+
 
 	@Test(dataProvider = "dataVal")
 	public void verifyAddingTwoProduct(String product) {
 
-		
+		log.info("Test verify Adding 2 Product In Cart");
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
 		CartPage cartobj = new CartPage(driver);
@@ -102,12 +108,12 @@ public class amazonTest extends Base {
 		home.cart.click();
 
 		Assert.assertEquals("added products not found in cart",2, cartobj.productsInCart().size());
-
+		log.info("Test Passed");
 	}
 
 	@Test(dataProvider = "dataVal")
 	public void verifyRemovingProduct(String product) throws InterruptedException {
-
+		log.info("Verify Deleting Product Test");
 		int noOfProducts;
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
@@ -129,7 +135,7 @@ public class amazonTest extends Base {
 
 		noOfProducts = cartobj.productsInCart().size();
 
-		cartobj.delete.click();
+		cartobj.deleteButton.click();
 		log.info("deleted one product");
 		
 		
@@ -137,7 +143,7 @@ public class amazonTest extends Base {
 		Thread.sleep(5000);
 
 		Assert.assertEquals("product not deleted ",noOfProducts - 1, cartobj.productsInCart().size());
-
+		log.info("Test Passed");
 	}
 
 	@DataProvider

@@ -25,7 +25,7 @@ public class CartPage {
 	public WebElement updateButton;
 
 	@FindBy(xpath = "//span[@class='a-declarative']/input[@value='Delete']")
-	public WebElement delete;
+	public WebElement deleteButton;
 
 	CartPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -41,7 +41,7 @@ public class CartPage {
 		return productsCart;
 	}
 
-	public WebElement productCartTitle(int i) {
+	public WebElement cartProductTitle(int i) {
 		return (WebElement) driver
 				.findElement(By.xpath("(//span[@class='a-size-medium sc-product-title a-text-bold'])[" + i + "]"));
 	}
