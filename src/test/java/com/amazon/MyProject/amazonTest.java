@@ -20,7 +20,7 @@ public class amazonTest extends Base {
 	@BeforeMethod
 	public void beforeTest() throws IOException {
 		initializeDriver();
-		Utils preReq = new Utils(driver);		
+		Utils preReq = new Utils(driver);
 		driver.get(prop.getProperty("url"));
 		preReq.prerequisiteToClearCart();
 		log.info("pre requisite run");
@@ -28,12 +28,12 @@ public class amazonTest extends Base {
 
 	@AfterMethod
 	public void afterTest() {
-		 driver.close();
+		driver.close();
 	}
 
 	@Test(dataProvider = "dataVal")
 	public void verifySearchedProduct(String product) {
-		
+
 		log.info("Running verify Searched Product in list test");
 		String productPresent = "";
 		log.info("navigated to home");
@@ -49,9 +49,9 @@ public class amazonTest extends Base {
 
 		}
 		log.info("Searching product in list");
-		
+
 		// Assuming task is to verify searched product is shown in list
-		Assert.assertTrue("searched product not found in list",productPresent.contains(product));
+		Assert.assertTrue("searched product not found in list", productPresent.contains(product));
 		log.info("Test Passed");
 	}
 
@@ -59,7 +59,7 @@ public class amazonTest extends Base {
 	public void verifyAddedProductInCart(String product) {
 
 		log.info("Running verify Added Product In Cart test");
-		
+
 		log.info("navigated to home");
 		SearchPage home = new SearchPage(driver);
 		home.sendSearch(product);
@@ -71,19 +71,17 @@ public class amazonTest extends Base {
 		home.productTitle(1).click();
 
 		home.addProduct(oldTab);
-		
+
 		log.info("product added to cart");
-		
+
 		home.cart.click();
 
 		CartPage cartobj = new CartPage(driver);
 
-		
-		Assert.assertTrue("product not found in cart",cartobj.cartProductTitle(1).getText().toLowerCase().contains(firstProductName));
+		Assert.assertTrue("product not found in cart",
+				cartobj.cartProductTitle(1).getText().toLowerCase().contains(firstProductName));
 		log.info("Test Passed");
 	}
-
-
 
 	@Test(dataProvider = "dataVal")
 	public void verifyAddingTwoProduct(String product) {
@@ -107,7 +105,7 @@ public class amazonTest extends Base {
 		log.info("added second product");
 		home.cart.click();
 
-		Assert.assertEquals("added products not found in cart",2, cartobj.productsInCart().size());
+		Assert.assertEquals("added products not found in cart", 2, cartobj.productsInCart().size());
 		log.info("Test Passed");
 	}
 
@@ -137,12 +135,46 @@ public class amazonTest extends Base {
 
 		cartobj.deleteButton.click();
 		log.info("deleted one product");
-		
-		
-		// Adding sleep as there is delay in amazon to perform delete action
-		Thread.sleep(5000);
 
-		Assert.assertEquals("product not deleted ",noOfProducts - 1, cartobj.productsInCart().size());
+		// Adding sleep as there is delay in amazon to perform delete action
+		Thread.sleep(500);
+
+		Assert.assertEquals("product not deleted ", noOfProducts - 1, cartobj.productsInCart().size());
+		log.info("Test Passed");
+	}
+
+	@Test(dataProvider = "dataVal")
+	public void verifyUpdateInTotalPrice(String product) throws InterruptedException {
+
+		log.info("Running Verify price change with change in quantity");
+
+		log.info("navigated to home");
+		SearchPage home = new SearchPage(driver);
+		home.sendSearch(product);
+		log.info("searched results shown");
+
+		String oldTab = driver.getWindowHandle();
+		int quantity = 10;
+		int productNumber = 1;
+
+		home.productTitle(productNumber).click();
+
+		home.addProduct(oldTab);
+
+		log.info("product added to cart");
+
+		home.cart.click();
+
+		CartPage cartobj = new CartPage(driver);
+
+		Double priceOfProduct = Double.parseDouble(cartobj.getProductPrice(productNumber).getText().trim());
+
+		cartobj.selectNoOfItems(quantity, productNumber);
+		log.info("updated quantity to " + quantity);
+
+		Double totalCartPrice = Double.parseDouble(cartobj.totalCartPrice.getText().trim().replaceAll(",", ""));
+
+		Assert.assertEquals("price not matching", priceOfProduct * quantity, totalCartPrice);
 		log.info("Test Passed");
 	}
 

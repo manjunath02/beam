@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.amazon.MyProject.amazonTest" class="method navigator-link" hash-for-method="verifySearchedProduct(car)">verifySearchedProduct(car)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.amazon.MyProject.amazonTest" class="method navigator-link" hash-for-method="verifyUpdateInTotalPrice(car)">verifyUpdateInTotalPrice(car)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -167,6 +172,14 @@
                   <a name="verifySearchedProduct(car)">
                   </a> <!-- verifySearchedProduct(car) -->
                   <span class="method-name">verifySearchedProduct</span>
+                  <span class="parameters">(car)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateInTotalPrice(car)">
+                  </a> <!-- verifyUpdateInTotalPrice(car) -->
+                  <span class="method-name">verifyUpdateInTotalPrice</span>
                   <span class="parameters">(car)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -227,28 +240,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyRemovingProduct')
 data.setCell(0, 2, 'com.amazon.MyProject.amazonTest')
-data.setCell(0, 3, 12564);
+data.setCell(0, 3, 9087);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddingTwoProduct')
+data.setCell(1, 1, 'verifyUpdateInTotalPrice')
 data.setCell(1, 2, 'com.amazon.MyProject.amazonTest')
-data.setCell(1, 3, 7560);
+data.setCell(1, 3, 8372);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddedProductInCart')
+data.setCell(2, 1, 'verifyAddingTwoProduct')
 data.setCell(2, 2, 'com.amazon.MyProject.amazonTest')
-data.setCell(2, 3, 6149);
+data.setCell(2, 3, 8025);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySearchedProduct')
+data.setCell(3, 1, 'verifyAddedProductInCart')
 data.setCell(3, 2, 'com.amazon.MyProject.amazonTest')
-data.setCell(3, 3, 2460);
+data.setCell(3, 3, 6301);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySearchedProduct')
+data.setCell(4, 2, 'com.amazon.MyProject.amazonTest')
+data.setCell(4, 3, 2442);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -281,47 +298,59 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddedProductInCart(car)</span>
-                <span class="method-start">17064 ms</span>
+                <span class="method-start">16598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">23863 ms</span>
+                <span class="method-start">23519 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">24011 ms</span>
+                <span class="method-start">23705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddingTwoProduct(car)</span>
-                <span class="method-start">39504 ms</span>
+                <span class="method-start">40046 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">47705 ms</span>
+                <span class="method-start">48606 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">47852 ms</span>
+                <span class="method-start">48761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRemovingProduct(car)</span>
-                <span class="method-start">62987 ms</span>
+                <span class="method-start">64142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">75898 ms</span>
+                <span class="method-start">73759 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">76022 ms</span>
+                <span class="method-start">73956 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchedProduct(car)</span>
-                <span class="method-start">91171 ms</span>
+                <span class="method-start">89387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">94245 ms</span>
+                <span class="method-start">92436 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">92574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateInTotalPrice(car)</span>
+                <span class="method-start">108264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">117080 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

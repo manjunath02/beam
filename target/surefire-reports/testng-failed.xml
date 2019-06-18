@@ -8,7 +8,7 @@
     <classes>
       <class name="com.amazon.MyProject.amazonTest">
         <methods>
-          <include name="verifyAddedProductInCart" invocation-numbers="0"/>
+          <include name="verifyUpdateInTotalPrice" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
