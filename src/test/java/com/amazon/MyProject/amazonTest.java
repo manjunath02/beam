@@ -137,7 +137,7 @@ public class amazonTest extends Base {
 		log.info("deleted one product");
 
 		// Adding sleep as there is delay in amazon to perform delete action
-		Thread.sleep(500);
+		Thread.sleep(2000);
 
 		Assert.assertEquals("product not deleted ", noOfProducts - 1, cartobj.productsInCart().size());
 		log.info("Test Passed");

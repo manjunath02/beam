@@ -1,40 +1,12 @@
-01:54:08.121 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:54:08.129 [main] INFO  com.amazon.MyProject.amazonTest - Running Verify price change with change in quantity
-01:54:08.129 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:54:10.910 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-01:54:12.799 [main] INFO  com.amazon.MyProject.amazonTest - product added to cart
-01:54:16.096 [main] INFO  com.amazon.MyProject.amazonTest - updated quantity to 10
-01:55:48.109 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:55:48.124 [main] INFO  com.amazon.MyProject.amazonTest - Running verify Added Product In Cart test
-01:55:48.124 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:55:50.471 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-01:55:52.696 [main] INFO  com.amazon.MyProject.amazonTest - product added to cart
-01:55:54.424 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
-01:56:11.571 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:56:11.572 [main] INFO  com.amazon.MyProject.amazonTest - Test verify Adding 2 Product In Cart
-01:56:11.572 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:56:14.007 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-01:56:15.829 [main] INFO  com.amazon.MyProject.amazonTest - added one product
-01:56:17.661 [main] INFO  com.amazon.MyProject.amazonTest - added second product
-01:56:19.596 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
-01:56:35.665 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:56:35.667 [main] INFO  com.amazon.MyProject.amazonTest - Verify Deleting Product Test
-01:56:35.667 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:56:37.985 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-01:56:39.980 [main] INFO  com.amazon.MyProject.amazonTest - added first product
-01:56:41.946 [main] INFO  com.amazon.MyProject.amazonTest - added second product
-01:56:44.232 [main] INFO  com.amazon.MyProject.amazonTest - deleted one product
-01:56:44.754 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
-01:57:00.911 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:57:00.912 [main] INFO  com.amazon.MyProject.amazonTest - Running verify Searched Product in list test
-01:57:00.912 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:57:03.205 [main] INFO  com.amazon.MyProject.amazonTest - Search Results Displayed
-01:57:03.354 [main] INFO  com.amazon.MyProject.amazonTest - Searching product in list
-01:57:03.354 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
-01:57:19.788 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
-01:57:19.789 [main] INFO  com.amazon.MyProject.amazonTest - Running Verify price change with change in quantity
-01:57:19.789 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
-01:57:22.293 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
-01:57:24.282 [main] INFO  com.amazon.MyProject.amazonTest - product added to cart
-01:57:28.110 [main] INFO  com.amazon.MyProject.amazonTest - updated quantity to 10
-01:57:28.161 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
+02:01:14.208 [main] INFO  com.amazon.MyProject.amazonTest - Running verify Searched Product in list test
+02:01:14.214 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+02:01:17.087 [main] INFO  com.amazon.MyProject.amazonTest - Search Results Displayed
+02:01:17.257 [main] INFO  com.amazon.MyProject.amazonTest - Searching product in list
+02:01:17.257 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
+02:01:34.128 [main] INFO  com.amazon.MyProject.amazonTest - pre requisite run
+02:01:34.129 [main] INFO  com.amazon.MyProject.amazonTest - Running Verify price change with change in quantity
+02:01:34.129 [main] INFO  com.amazon.MyProject.amazonTest - navigated to home
+02:01:36.456 [main] INFO  com.amazon.MyProject.amazonTest - searched results shown
+02:01:38.505 [main] INFO  com.amazon.MyProject.amazonTest - product added to cart
+02:01:42.226 [main] INFO  com.amazon.MyProject.amazonTest - updated quantity to 10
+02:01:42.309 [main] INFO  com.amazon.MyProject.amazonTest - Test Passed
